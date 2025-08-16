@@ -17,7 +17,7 @@ st.sidebar.markdown("**Email :** melzyunho@gmail.com")
 st.sidebar.markdown("**Bio :** Data Scientist Learner")
 
 # Link GitHub
-st.sidebar.markdown("📂 **Repo GitHub:** [streamlit_boston](https://github.com/Elizabeth-Meliani/streamlit_boston)")
+st.sidebar.markdown("📂 **Repo GitHub :** [streamlit_boston](https://github.com/Elizabeth-Meliani/streamlit_boston)")
 
 # Tujuan
 st.subheader("Tujuan")
@@ -29,7 +29,7 @@ Menerapkan regresi teratur (regularized regression) untuk prediksi harga rumah m
 st.subheader("Boxplot : Distribusi Data dan Outlier")
 st.markdown("""
 Menunjukkan distribusi data, outlier, dan rentang nilai setiap fitur.
-Banyak fitur (`crim`, `zn`, `indus`, `rm`, `age`, `dis`, `rad`, `tax`, `ptratio`, `black`, `lstat`) memiliki pencilan.
+Banyak fitur (`crim`, `zn`, `indus`, `rm`, `age`, `dis`, `rad`, `tax`, `ptratio`, `black`, `lstat`) memiliki outlier.
 Fitur `tax` dan `black` memiliki rentang nilai luas dengan banyak outlier atas.
 `chas` adalah variabel biner.
 """)
