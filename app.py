@@ -15,6 +15,7 @@ st.sidebar.header("Profil")
 st.sidebar.markdown("**Nama :** Elizabeth Meliani")
 st.sidebar.markdown("**Email :** melzyunho@gmail.com")
 st.sidebar.markdown("**Bio :** Data Scientist Learner")
+st.sidebar.markdown("📂 **Repo GitHub:** [streamlit_boston](https://github.com/Elizabeth-Meliani/streamlit_boston)")
 
 # Tujuan
 st.subheader("Tujuan")
@@ -25,9 +26,9 @@ Menerapkan regresi teratur (regularized regression) untuk prediksi harga rumah m
 # --- Boxplot ---
 st.subheader("Boxplot : Distribusi Data dan Outlier")
 st.markdown("""
-Menunjukkan distribusi data, outlier, dan rentang nilai setiap fitur.  
-Banyak fitur (`crim`, `zn`, `indus`, `rm`, `age`, `dis`, `rad`, `tax`, `ptratio`, `black`, `lstat`) memiliki pencilan.  
-Fitur `tax` dan `black` memiliki rentang nilai luas dengan banyak outlier atas.  
+Menunjukkan distribusi data, outlier, dan rentang nilai setiap fitur.
+Banyak fitur (`crim`, `zn`, `indus`, `rm`, `age`, `dis`, `rad`, `tax`, `ptratio`, `black`, `lstat`) memiliki pencilan.
+Fitur `tax` dan `black` memiliki rentang nilai luas dengan banyak outlier atas.
 `chas` adalah variabel biner.
 """)
 
@@ -37,17 +38,17 @@ ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
 st.pyplot(fig)
 
 st.markdown("""
-**Insight :**  
-Beberapa fitur seperti `crim`, `zn`, dan `black` memiliki outlier ekstrem.  
+**Insight :**
+Beberapa fitur seperti `crim`, `zn`, dan `black` memiliki outlier ekstrem.
 Di tahap EDA, outlier cukup dicatat karena bisa mewakili kondisi nyata dan belum tentu merusak model.
 """)
 
 # --- Heatmap ---
 st.subheader("Heatmap : Korelasi Antar Variabel")
 st.markdown("""
-Memvisualisasikan korespondensi antar variabel dengan warna dan angka.  
-- **Warna merah :** korelasi positif kuat.  
-- **Warna biru :** korelasi negatif kuat.  
+Memvisualisasikan korespondensi antar variabel dengan warna dan angka.
+- **Warna merah :** korelasi positif kuat.
+- **Warna biru :** korelasi negatif kuat.
 - **Angka :** nilai koefisien Pearson (-1 hingga +1).
 """)
 
@@ -56,7 +57,7 @@ sns.heatmap(df.corr(), annot=True, cmap="coolwarm", fmt=".2f", square=True, ax=a
 st.pyplot(fig)
 
 st.markdown("""
-**Insight :**  
-Fitur `rm` (jumlah kamar) punya korelasi positif kuat ke `medv`.  
+**Insight :**
+Fitur `rm` (jumlah kamar) punya korelasi positif kuat ke `medv`.
 Sebaliknya, `lstat` dan `nox` punya korelasi negatif, menunjukkan bahwa kondisi sosial ekonomi rendah dan polusi udara menurunkan harga rumah.
 """)
