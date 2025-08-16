@@ -15,6 +15,8 @@ st.sidebar.header("Profil")
 st.sidebar.markdown("**Nama :** Elizabeth Meliani")
 st.sidebar.markdown("**Email :** melzyunho@gmail.com")
 st.sidebar.markdown("**Bio :** Data Scientist Learner")
+
+# Link GitHub
 st.sidebar.markdown("📂 **Repo GitHub:** [streamlit_boston](https://github.com/Elizabeth-Meliani/streamlit_boston)")
 
 # Tujuan
