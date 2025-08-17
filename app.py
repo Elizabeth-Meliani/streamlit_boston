@@ -63,3 +63,10 @@ st.markdown("""
 Fitur `rm` (jumlah kamar) punya korelasi positif kuat ke `medv`.
 Sebaliknya, `lstat` dan `nox` punya korelasi negatif, menunjukkan bahwa kondisi sosial ekonomi rendah dan polusi udara menurunkan harga rumah.
 """)
+
+st.markdown("""
+### Kesimpulan Sementara
+Dari analisis visualisasi **boxplot** dan **heatmap**, kita bisa menangkap pola penting dalam dataset Boston Housing. Boxplot menunjukkan sebaran nilai tiap fitur dan memperlihatkan adanya kondisi ekstrem atau outlier sehingga kita bisa memahami variasi data secara menyeluruh. Sementara itu, heatmap mengungkap hubungan antar variabel: jumlah kamar (`rm`) terlihat memiliki pengaruh positif yang kuat terhadap harga rumah, artinya rumah dengan lebih banyak kamar cenderung lebih mahal. Di sisi lain, faktor sosial ekonomi rendah (`lstat`) dan tingkat polusi udara (`nox`) memiliki pengaruh negatif terhadap harga rumah, menandakan bahwa area dengan kondisi sosial ekonomi rendah atau polusi tinggi biasanya memiliki harga rumah lebih rendah.
+
+Secara keseluruhan, insight dari tahap eksplorasi ini memberikan pemahaman awal yang penting mengenai faktor-faktor penentu harga rumah. Informasi ini akan menjadi dasar yang kuat untuk membangun model regresi yang lebih akurat dan relevan dalam memprediksi harga rumah di Boston.
+""")
